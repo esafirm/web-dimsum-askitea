@@ -41,8 +41,36 @@
         margin: auto;
       }
 
+      /* .link-satu {
+        animation: flicker 1s steps(5, start) infinite;
+      }
+
+      .link-dua {
+        animation: flicker 2s steps(5, start) infinite;
+      }
+
+      .link-tiga {
+        animation: flicker 3s steps(5, start) infinite;
+      } */
+
       a {
+        animation: flicker 3s infinite;
+        animation-timing-function: linear;
         margin: auto;
+        margin-left: 16;
+        margin-right: 16;
+        margin-top: 8;
+        margin-bottom: 8;
+        padding: 10;
+        border-color: orange;
+        border-style: solid;
+        border-radius: 30px;
+      }
+
+      @keyframes flicker {
+        to {
+          background-color: orange;
+        }
       }
     </style>
   </head>
@@ -55,15 +83,20 @@
     <div class="imgbox">
       <img class="center-fit" src="xbanner_top.webp" />
 
-      <a href="https://wa.me/6289663373784" target="_blank">
+      <a class="link-satu" href="https://wa.me/6289663373784" target="_blank">
         <img class="center-fit" src="xbanner_wa.png" />
       </a>
 
-      <a href="https://www.tokopedia.com/dimsumaskitea1" target="_blank">
+      <a
+        class="link-dua"
+        href="https://www.tokopedia.com/dimsumaskitea1"
+        target="_blank"
+      >
         <img class="center-fit" src="xbanner_toped.png" />
       </a>
 
       <a
+        class="link-tiga"
         href="https://gofood.co.id/english/bandung/restaurant/ayam-ngegas-cilame-permai-f77124c8-dfb7-47b4-9ef0-36165e7fe766"
         target="_blank"
       >
