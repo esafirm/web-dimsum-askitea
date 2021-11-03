@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff7ee;
+}
+
+.title {
+  margin-top: 20;
+  margin-bottom: 20;
+}
+
+.imgbox {
+  display: grid;
+}
+
+.center-fit {
+  max-width: 100%;
+  margin: auto;
+}
+
+a {
+  animation: flicker 3s infinite;
+  animation-timing-function: linear;
+  margin: auto;
+  margin-left: 16;
+  margin-right: 16;
+  margin-top: 8;
+  margin-bottom: 8;
+  padding: 10;
+  border-color: orange;
+  border-style: solid;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+@keyframes flicker {
+  to {
+    background-color: orange;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.logo {
+  width: 50px;
+  max-height: 60px;
+}
+
+.button-text {
+  font-size: 22;
+  margin-left: 10px;
+  color: black;
+}
